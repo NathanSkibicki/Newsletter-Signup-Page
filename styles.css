@@ -1,0 +1,184 @@
+html{
+    display:flex;
+    align-items: center;
+    height:100vh;
+    margin:0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsl(235,18%, 26%);
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('./assets/fonts/Roboto-Bold.ttf');
+
+}
+@font-face{
+    font-family: 'Roboto-Regular';
+    src: url('./assets/fonts/Roboto-Regular.ttf')
+}
+/* Main Login Box */
+#loginbox{
+    border-radius: 25px;
+    background: hsl(0, 0%, 100%);
+    padding:25px;
+    padding-left:30px;
+    width: 800px;
+    height: 600px;
+    text-align: left;
+    margin: auto;
+    display:grid;
+    column-gap: 10px;
+    grid-template-columns: auto auto;
+}
+#loginbox .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#loginbox .image{
+    max-width: 100%;
+    height: auto;
+}
+#loginbox h1{
+    color:hsl(234, 29%, 20%);
+    font-family:'Roboto-Bold' ;
+    text-align: left;
+    font-size: 50px;
+    padding-top: 10%;
+    padding-left: 30px;
+}
+#loginbox p{
+    color: hsl(234, 29%, 20%);
+    font-family: 'Roboto-Regular';
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 60px;
+    font-size: 16px;
+}
+
+/*UL checkmark*/
+#loginbox  ul{
+    list-style-type: none;
+    padding: 0;
+}
+#loginbox  li{
+    position: relative;
+    padding-left: 60px;
+    padding-top:8px;
+    font-family:'Roboto-Regular';
+}
+
+#loginbox  li::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:50%;
+    width:20px;
+    height: 20px;
+    transform: translateY(-43%);
+    background: url('assets/images/icon-list.svg') no-repeat center center;
+    background-size:contain;
+    padding-left: 30px;
+}
+
+/*Email Address*/
+#loginbox h5{
+    padding-top: 5px;
+    font-family: 'Roboto-Bold';
+    color: hsl(234, 29%, 20%);
+}
+#loginbox input{
+    border-radius: 10px;
+    background: hsl(0, 0%, 100%);;
+    border-color:lightgray;
+    width: 363px;
+    height: 50px;
+    text-align: left;
+    padding-left:30px;
+    font-family: 'Roboto-Regular';
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+}
+
+#emailPrompt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#emailPrompt span{
+    font-family: 'Roboto-Bold';
+    font-size: 12px
+}
+
+/*Subscribe Button*/
+#loginbox button{
+    border-radius: 10px;
+    background: hsl(234, 29%, 20%);
+    width: 400px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto-Regular';
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+}
+
+.attribution{
+    margin-top: auto;
+    padding: 10px;
+
+}
+/*----------------------------------Successful Signup Page--------------------------------*/
+#signedInBox{
+    border-radius: 25px;
+    background: hsl(0, 0%, 100%);
+    padding:25px;
+    padding-left:30px;
+    width: 400px;
+    height: 450px;
+    text-align: left;
+    margin: auto;
+}
+
+#signedInBox img{
+    padding-left: 20px;
+    padding-top:20px;
+}
+
+#signedInBox h1{
+    font-family: 'Roboto-Bold';
+    color: hsl(234, 29%, 20%);
+    font-size: 50px;
+    padding-left:20px;
+}
+
+#signedInBox span{
+    font-family: 'Roboto-Bold';
+    color: hsl(234, 29%, 20%);
+}
+
+#signedInBox p{
+    font-family: 'Roboto-Regular';
+    color: hsl(234, 29%, 20%);
+    padding-left:25px;
+    padding-right:25px;
+}
+
+#signedInBox button{
+    font-family: 'Roboto-Regular';
+    border-radius: 10px;
+    background: hsl(234, 29%, 20%);
+    width:350px;
+    height: 50px;
+    text-align: center;
+    margin:auto;
+    display:block;
+    color: white;
+}
+
+
